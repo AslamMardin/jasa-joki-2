@@ -147,11 +147,16 @@ const addPelanggan =  (pelanggans) => {
         setAktifAplikasi(data.aktif)
     }
 
-    getAktifAplikasi()
+
+
 useEffect(() => {
+    getAktifAplikasi()
    menghtungHarga()
-  
-}, [aktifAplikasi])
+
+   if(jokis.length == 0) {
+    setHarga(0)
+   }
+},[setAktifAplikasi, jokis, harga])
 
 
 
@@ -204,4 +209,4 @@ useEffect(() => {
   );
 }
 
-export default App;
+export default App; 

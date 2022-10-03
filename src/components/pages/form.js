@@ -81,7 +81,7 @@ const Form = ({...props}) => {
                 setErrors({errorPaket:""})
                 setPelanggans(data);
                 setIsValid(true)
-                resetForm()
+                // resetForm()
             }else {
                 setErrors({errorPaket:"Anda Belum Memilih Paket"})
             }
