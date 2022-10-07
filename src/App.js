@@ -196,7 +196,7 @@ useEffect(() => {
                 </div>
                  )}
               </div>
-              <div className="col-sm-12  col-md-12 mt-3">
+              <div className="col-sm-12 col-md-6 mt-3">
                   <div className="d-flex justify-content-center ">
                       <Joki name="Risal Muzakkar" img="ical.jpg"  status="Pendiri Workit" />
                   </div>

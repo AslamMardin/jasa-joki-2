@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PelangganBox = ({pelanggans,historys}) => {
+const PelangganBox = ({pelanggans,historys,npmInput}) => {
   return (
     <>
    
@@ -9,7 +9,7 @@ const PelangganBox = ({pelanggans,historys}) => {
             <div className="col-sm-12 col-md-6 offset-md-3">
                 <p className="f-5 "><i className="bi bi-clock-fill"></i> Log</p>
                 <ul className="list-group">
-                    {pelanggans.filter(pelanggan => pelanggan.isAktif === true)
+                    {pelanggans.filter(pelanggan => (pelanggan.isAktif === true && pelanggan.npm == npmInput))
                     .map(pelanggan => (
 
                     <li className="list-group-item" key={pelanggan.id}>
@@ -17,14 +17,15 @@ const PelangganBox = ({pelanggans,historys}) => {
                              <h6>
                                 {pelanggan.nama}
                             </h6>
-                        <span>
-                            <span className='text-sm text-end d-block fw-semibold m-0'>Belum Selesai</span>
+                        <span>  
+                            <span className='text-sm text-end d-block fw-semibold m-0'>{pelanggan.jurusan}</span>
                             <span className='text-sm text-end text-secondary m-0'>{pelanggan.tanggal}</span>
                         </span>
                         </div>
                        
                         <div className="mb-1">
                             <ul className="list-unstyled text-dark" style={{fontSize: "12px"}}>
+                            {historys.length == 0 && <b className='alert alert-danger d-block'>Aplikasi Anda Belum Dikerja</b>}
                         {historys.filter(item => item.idPelanggan === pelanggan.id).map((history, i) => (
                                 <li className="d-flex justify-content-start align-items-center" key={i}>
                                     <i className="bi bi-clock-history text-success fw-bold fs-5"></i>

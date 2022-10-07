@@ -15,8 +15,8 @@ const Guide = () => {
     <ol className="text-capitalize text-break text-wrap">
         <li className='mt-1'>Jika kamu ingin manjoki disini silahkan isi biodata yang tersedia</li>
         <li className='mt-1'>setelah tekan cetak, kamu akan diberikan nota detail</li>
-        <li className='mt-1'>Screen Shoot itu ! dan kirim via Whatsapp ke kontak aslam mardin atau abdul wahab</li>
-        <li className='mt-1'>Jika sudah distujui, kamu dapat meliat namamu tampil dihalaman monitoring</li>
+        <li className='mt-1'>Screen Shoot itu ! dan kirim via Whatsapp ke kontak Admin</li>
+        <li className='mt-1'>Jika sudah distujui, kamu dapat meliat namamu tampil dihalaman monitoring setelah memasukan NPM</li>
     </ol>
   </div>
    

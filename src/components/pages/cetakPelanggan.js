@@ -57,11 +57,7 @@ const CetakPelanggan = ({pelanggans,...props}) => {
                     <strong>Total : Rp {props.formatRupiah(props.harga)}</strong>
                 </td>
             </tr>
-             <tr>
-                <td align="right" colSpan="5">
-                    <strong className="text-danger"><i className="bi bi-exclamation-circle-fill"></i> Bisa bayar setengah!</strong>
-                </td>
-            </tr>
+             
             <tr>
                 <td align="right" colSpan="5">
                     <strong className="text-success"><i className="bi bi-exclamation-circle-fill"></i> screen shoot kemudian kirim via Whatsapp!</strong>

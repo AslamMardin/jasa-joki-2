@@ -9,6 +9,7 @@ const Home = () => {
     const [pelanggans, setPelanggans] = useState([])
     const [historys, setHistorys] = useState([])
     const [loading, setLoading] = useState(true)
+    const [npmInput, setNpmInput] = useState('')
     
 let url = `https://jasa-joki-default-rtdb.`
     url += `asia-southeast1.firebasedatabase.app`
@@ -82,11 +83,12 @@ let url = `https://jasa-joki-default-rtdb.`
    
    <section id="saldo-box">
       <div className="container mb-4">
-        <div className="total-saldo">
-          <p className="pt-4 ps-5 mb-0 d-block">Total Client</p>
-          <h2 className="display-5 px-5 pb-3">
-          {totalPelanggan} Orang
-          </h2>
+        <div className="total-saldo p-3">
+          <p className="pt-4 ps-5 mb-0 d-block fw-bold">Masukan NPM Anda</p>
+          <form>
+            <input type={`text`} className="form-control text-center my-3" onChange={(e) => setNpmInput(e.target.value)} placeholder='NPM'/>
+            <span className='my-2' style={{color:"red", fontSize:"12px", textAlign:"center", display:"block"}}>Jika NPM tidak ditemukan hub. pihak admin!</span>
+          </form>
           <div className="d-flex justify-content-center">
             <p className="mini-saldo mini-saldo-pemasukan py-2">
            
@@ -103,9 +105,11 @@ let url = `https://jasa-joki-default-rtdb.`
         <div className="spinner-border" role="status">
         </div>
       </div>
-    ) : (<PelangganBox 
+    ) : (
+    <PelangganBox 
       pelanggans={pelanggans} 
       historys={historys} 
+      npmInput={npmInput}
       />
       )}
 
