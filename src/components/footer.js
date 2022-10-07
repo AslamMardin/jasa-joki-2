@@ -10,7 +10,7 @@ const Footer = () => {
             <p className="lead mb-0">
               <Link to="/dashboard" as="button" className="text-decoration-none text-white">Joki Web / Skripsi</Link>
             </p>
-            <p><span className="fw-bold">Hubungin Via Wa :</span> Aslam Mardin(0858-2558-7404) | Abdul Wahab(0852-4058-6818)</p>
+            <p><span className="fw-bold">Hubungin Via Wa :</span> Admin (0853-2135-3455)</p>
           </div>
         </div>
       </div>

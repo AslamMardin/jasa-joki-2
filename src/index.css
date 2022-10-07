@@ -23,12 +23,7 @@ body {
 /* ================== */
 
 #header {
-  background-color: #412abe;
-  background: linear-gradient(
-    180deg,
-    rgba(65, 42, 190, 1) 0%,
-    rgba(94, 67, 244, 1) 100%
-  );
+  background-color: #e28743;                   
   clip-path: ellipse(87% 100% at 31.5% 0%);
   color: white;
   height: 200px;
@@ -83,17 +78,19 @@ body {
 /* ================== */
 
 #footer {
-  background-color: #412abe;
+  background-color: #e28743;
   clip-path: ellipse(189% 100% at 143.13% 100%);
 }
 
 
 .text-sm {
   font-size: 11px;
-  color: #412abe;
+  color: #e28743;
+  /* color: #412abe; */
 }
 .bg-utama, .btn-utama { 
-  background-color: #412abe;
+  background-color: #e28743;
+  /* background-color: #412abe; */
 }
 
 .btn-utama {
@@ -108,9 +105,15 @@ td,th {
   border-bottom: 1px solid black;
 }
 
+.logo-joki {
+  margin:20px
+}
+
 @media (min-width: 768px) {
   .img-sm {
       width: 100px;
       height: 100px;
     }
+
+ 
 }

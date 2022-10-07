@@ -10,36 +10,39 @@ import swal from 'sweetalert';
 
 
 
-  const ilmuAslam = [
-    'Kuliah di Universitas Al-Asyariah Jurusan Sistem Informasi', 'Mengikuti kegiatan standar kopetensi kerja nasional indonesia (SKKNI) bidang informatika tahun 2019', 'menguasai bahasa php dan javascript',
-    'menguasai beberapa fremework diantaranya bootstrap, tailwindCss, ReactJS, VueJs, Laravel, Codegniter',
-    'pernah mengikuti pelatihan mikroti insanetworking di makassar', 
-    'pernah perwakilan sekolah diajang lomba olimpiade jaringan mikrotik seindonesia tahun 2016'
-  ]
-  const ilmuWahab = [
-    'Alumni tahun 2021 universitas sulawesi barat jurusan teknik informatika Science',
-    'juara 1 Lomba SoftWare Development Nasional Bandung tahun 2019',
-    'berpengalaman dengan berbagai bahasa pemograman dan pengembangan aplikasi',
-    'programer teliti yang senang berkerja dalam tim',
-    'termotivasi untuk mencari pekerjaan pengembangan aplikasi agar dapat terus meningkatkan keterampilan' 
-  ]
+ 
 
   const initialPakets = [
+    {
+      id:1,
+      name:"Jurnal & Plagiasi",
+      harga:250000
+    },
         {
-            id:1,
-            name:"Proposal - Skripsi",
-            harga:1000000
-        },
-         {
             id:2,
-            name:"Jurnal",
-            harga:250000
+            name:"Proposal",
+            harga:500000
         },
          {
             id:3,
-            name:"Program",
-            harga:2000000
+            name:"Skripsi (Hasil & Tutup)",
+            harga:1500000
         },
+        {
+          id:4,
+          name:"Skripsi (Sempro, Hasil & Tutup)",
+          harga:2500000
+        },
+        {
+            id:5,
+            name:"Program",
+            harga:2500000
+        },
+        {
+          id:6,
+          name:"1 Paket (Skripsi & Program)",
+          harga:4000000
+      },
     ];
 
 
@@ -193,10 +196,9 @@ useEffect(() => {
                 </div>
                  )}
               </div>
-              <div className="col-sm-12  col-md-6 mt-3">
-                  <div className="d-flex justify-content-between ">
-                      <Joki name="Aslam Mardin" img="aslam.jpg" ilmus={ilmuAslam}/>
-                      <Joki name="Abdul Wahab" img="wahab.jpg" ilmus={ilmuWahab}/>
+              <div className="col-sm-12  col-md-12 mt-3">
+                  <div className="d-flex justify-content-center ">
+                      <Joki name="Risal Muzakkar" img="ical.jpg"  status="Pendiri Workit" />
                   </div>
               </div>
              </div>
